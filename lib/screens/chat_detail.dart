@@ -38,7 +38,7 @@ class _ChatDetailState extends State<ChatDetail> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        leadingWidth: 100,
+        leadingWidth: 70,
         titleSpacing: 0,
         // leading: Padding(
         //   padding: const EdgeInsets.only(right: 250),
@@ -76,11 +76,13 @@ class _ChatDetailState extends State<ChatDetail> {
           ],
         ),
         title: Column(
-           mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.start,
+         crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
+              
               widget.details.name.toString(),
               style: TextStyle(fontSize: 16, color: Colors.black),
             ),
